@@ -1,0 +1,128 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+    font-size: 15px;
+    font-family: 'Overpass';
+    font-weight: 400;
+    color: hsl(216, 12%, 48%);
+}
+
+.rating_card {
+    width: 410px;
+    background: linear-gradient(hsl(213, 19%, 16%), hsl(213, 19%, 12%));
+    border-radius: 24px;
+}
+
+.rating_card > div {
+    padding-inline: 30px;
+    padding-block: 34px;
+}
+
+.circle {
+    background-color: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 30px;
+}
+
+.rate:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.rate:active {
+    background-color: hsl(25, 97%, 43%);
+}
+
+.title {
+    font-size: 28px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 10px;
+}
+
+.desc {
+    line-height: 1.6;
+}
+
+.r_container {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.submit_btn {
+    height: 46px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.submit_btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.active {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.rate_state {
+    display: block;
+}
+
+.thank_state {
+    display: none;
+    place-items: center;
+    text-align: center;
+}
+
+.result {
+    margin-top: 24px;
+    color: hsl(35, 90%, 37%);
+    background-color: hsl(213, 19%, 18%);
+    padding: 6px;
+    padding-inline: 20px;
+    border-radius: 20px;
+}
+
+.thank_state > .title {
+    margin-top: 32px;
+}
+
+.thank_state > .desc {
+    font-size: 15.6px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding-inline: 16px;
+    }
+    .rating_card {
+        width: 100%;
+    }
+
+    .rating_card > div {
+        padding-inline: 20px;
+        padding-block: 24px;
+    }
+
+    .desc, .thank_state > .desc {
+        font-size: 14px;
+    }
+
+    .circle {
+        margin-bottom: 20px;
+    }
+}
